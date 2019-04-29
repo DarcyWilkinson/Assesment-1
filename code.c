@@ -16,8 +16,8 @@ void decrypt(char code[], int key);
 
 int main()
 {
-    char code[100], cod;
-    int point = 0, key;
+    char code[100];
+    int key;
     
     printf("enter code in CAPS ONLY: ");
     gets(code); // reads from stdin and puts it in a string terminating at the newline character (\n)
@@ -35,11 +35,12 @@ int main()
             break; 
            
             case 2: 
-                decrypt(code, key)
+                decrypt(code, key);
             break;
             
             default: printf("error"); //if its anything apart from 1 or 2
-   
+        }
+
          return 0;
 }
 
